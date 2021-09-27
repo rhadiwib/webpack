@@ -1,0 +1,165 @@
+application {
+  config {
+    baseName tsurvey,
+    applicationType gateway,
+    packageName com.tsel.tsurvey,
+    serviceDiscoveryType eureka,
+    authenticationType jwt,
+    prodDatabaseType postgresql,
+    cacheProvider hazelcast,
+    buildTool maven,
+    clientFramework react,
+    serverPort 9871
+  }
+  entities *
+}
+application {
+  config {
+    baseName respondent,
+    applicationType microservice,
+    packageName com.tsel.respondent,
+    serviceDiscoveryType eureka,
+    authenticationType jwt,
+    prodDatabaseType postgresql,
+    buildTool maven,
+    serverPort 9872
+  }
+  entities Respondent
+}
+
+application {
+  config {
+    baseName sms,
+    applicationType microservice,
+    packageName com.tsel.sms,
+    serviceDiscoveryType eureka,
+    authenticationType jwt,
+    prodDatabaseType postgresql,
+    buildTool maven,
+    serverPort 9873
+  }
+  entities Sms
+}
+
+entity Tsurvey {
+  surveyId String,
+  segementList String,
+  totalRespondent Integer,
+  totalSmsBroadcast Integer,
+  maxBroadcastPerBatch Integer,
+  totalBatch Integer,
+  createAt Instant,
+  updateAt Instant
+}
+
+entity Respondent {
+    createdAt Instant,
+    flag String,
+    msisdn String,
+    agex Integer,
+    gender String,
+    provinceName String,
+    cityName String,
+    arpuSegmentName String,
+    deviceBrand String,
+	deviceType String,
+	os String,
+	deviceSes String,
+	autoSeeker Integer,
+	olTrans Integer,
+	autoEnthusiast Integer,
+	comicAnimation Integer,
+	book Integer,
+	finance Integer,
+	olBank Integer,
+	jobSeek Integer,
+	familyOriented Integer,
+	college Integer,
+	languagex Integer,
+	gambling Integer,
+	movie Integer,
+	music Integer,
+	fashion Integer,
+	politics Integer,
+	dating Integer,
+	wedding Integer,
+	photo Integer,
+	cooking Integer,
+	foodie Integer,
+	fitness Integer,
+	arts Integer,
+	gardening Integer,
+	homedecor Integer,
+	video Integer,
+	chatting Integer,
+	socnet Integer,
+	medicine Integer,
+	drama Integer,
+	news Integer,
+	cashless Integer,
+	insurance Integer,
+	pets Integer,
+	popcult Integer,
+	property Integer,
+	christianity Integer,
+	islam Integer,
+	science Integer,
+	promo Integer,
+	ecomm Integer,
+	soccer Integer,
+	autorace Integer,
+	sportsoth Integer,
+	beauty Integer,
+	gadget Integer,
+	techie Integer,
+	tv Integer,
+	travel Integer,
+	game Integer,
+	adults Integer,
+	customSegment1 String,
+	customSegment2 String,
+	customSegment3 String,
+	customSegment4 String,
+	customSegment5 String,
+	customSegment6 String,
+	customSegment7 String,
+	customSegment8 String,
+	customSegment9 String
+}
+
+entity Sms {
+    tsurveyId Integer,
+    smsBatchId Integer,
+    transactionId String,
+    channel String,
+    serviceId String,
+    senderId String,
+    smsText String,
+    status String,
+    jsonResponse String,
+    createdAt Instant,
+    sendAt Instant,
+    deliveredAt Instant
+}
+
+entity SmsBatch {
+    surveyId String,
+	senderId String,
+    batchStatus String,
+    smsText String,
+    channel String,
+    totalSuccess Integer,
+    totalFailed Integer,
+    totalSent Integer,
+    createAt Instant,
+    updateAt Instant
+}
+
+relationship OneToMany {
+    Tsurvey{smsBatch} to SmsBatch{tsurvey(surveyId)}
+}
+
+service Respondent, Sms, Tsurvey, SmsBatch with serviceClass
+paginate Respondent, Sms, Tsurvey, SmsBatch with pagination
+microservice Sms with sms
+microservice Respondent with respondent
