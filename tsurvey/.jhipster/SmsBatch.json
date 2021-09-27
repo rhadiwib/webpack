@@ -1,0 +1,65 @@
+{
+  "name": "SmsBatch",
+  "fields": [
+    {
+      "fieldName": "surveyId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "senderId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "batchStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "smsText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "channel",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "totalSuccess",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "totalFailed",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "totalSent",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "createAt",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "updateAt",
+      "fieldType": "Instant"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "tsurvey",
+      "otherEntityRelationshipName": "smsBatch",
+      "relationshipName": "tsurvey",
+      "otherEntityField": "surveyId"
+    }
+  ],
+  "entityTableName": "sms_batch",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": [
+    "tsurvey"
+  ]
+}

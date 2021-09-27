@@ -1,0 +1,307 @@
+{
+  "name": "Respondent",
+  "fields": [
+    {
+      "fieldName": "createdAt",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "flag",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "msisdn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "agex",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "gender",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "provinceName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cityName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "arpuSegmentName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "deviceBrand",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "deviceType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "os",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "deviceSes",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "autoSeeker",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "olTrans",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "autoEnthusiast",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "comicAnimation",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "book",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "finance",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "olBank",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "jobSeek",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "familyOriented",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "college",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "languagex",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "gambling",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "movie",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "music",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "fashion",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "politics",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "dating",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "wedding",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "photo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "cooking",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "foodie",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "fitness",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "arts",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "gardening",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "homedecor",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "video",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "chatting",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "socnet",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "medicine",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "drama",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "news",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "cashless",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "insurance",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "pets",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "popcult",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "property",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "christianity",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "islam",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "science",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "promo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "ecomm",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "soccer",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "autorace",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "sportsoth",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "beauty",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "gadget",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "techie",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "tv",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "travel",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "game",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "adults",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "customSegment1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "customSegment2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "customSegment3",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "customSegment4",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "customSegment5",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "customSegment6",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "customSegment7",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "customSegment8",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "customSegment9",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "respondent",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": [
+    "tsurvey",
+    "respondent"
+  ],
+  "microserviceName": "respondent"
+}
