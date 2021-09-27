@@ -1,0 +1,56 @@
+{
+  "name": "Tsurvey",
+  "fields": [
+    {
+      "fieldName": "surveyId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "segementList",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "totalRespondent",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "totalSmsBroadcast",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "maxBroadcastPerBatch",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "totalBatch",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "createAt",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "updateAt",
+      "fieldType": "Instant"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "smsBatch",
+      "otherEntityRelationshipName": "tsurvey",
+      "relationshipName": "smsBatch"
+    }
+  ],
+  "entityTableName": "tsurvey",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": [
+    "tsurvey"
+  ]
+}

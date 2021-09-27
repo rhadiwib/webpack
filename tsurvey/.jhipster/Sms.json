@@ -1,0 +1,67 @@
+{
+  "name": "Sms",
+  "fields": [
+    {
+      "fieldName": "tsurveyId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "smsBatchId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "transactionId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "channel",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "serviceId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "senderId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "smsText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "jsonResponse",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "sendAt",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "deliveredAt",
+      "fieldType": "Instant"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "sms",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": [
+    "tsurvey",
+    "sms"
+  ],
+  "microserviceName": "sms"
+}
